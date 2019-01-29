@@ -1,7 +1,7 @@
 feature 'shows list of bookmarks' do
   scenario 'user visits bookmarks list view' do
-    visit '/bookmarks'
-    expect(page).to have_content('Wikipedia')
-    expect(page).to have_link('https://en.wikipedia.org/wiki/Main_Page', href: 'https://en.wikipedia.org/wiki/Main_Page')
+    visit '/'
+    click_button('View Bookmarks')
+    expect(page).to have_content('http://www.google.com')
   end
 end

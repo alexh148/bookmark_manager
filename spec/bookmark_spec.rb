@@ -1,7 +1,8 @@
 require 'bookmark'
+require 'pg'
 
 describe Bookmark do
   it 'returns a list of bookmarks' do
-    expect(subject.all).to include(['Wikipedia', 'https://en.wikipedia.org/wiki/Main_Page'])
+    expect(Bookmark.all).to include('http://www.google.com')
   end
 end
