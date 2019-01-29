@@ -4,11 +4,29 @@
       "/Users/alexhutchings/Projects/bookmark_manager/spec/bookmark_spec.rb": [
         1,
         1,
+        1,
+        null,
+        1,
         null,
         1,
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/alexhutchings/Projects/bookmark_manager/spec/helper.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
         null
       ],
       "/Users/alexhutchings/Projects/bookmark_manager/spec/features/bookmarks_page_spec.rb": [
@@ -36,6 +54,6 @@
         null
       ]
     },
-    "timestamp": 1548774552
+    "timestamp": 1548777869
   }
 }
