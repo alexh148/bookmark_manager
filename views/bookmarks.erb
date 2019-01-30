@@ -8,8 +8,11 @@
     <% @bookmarks.each do |bookmark| %>
     <p><a href='<%=bookmark.url%>'><%=bookmark.title%></a></p>
     <% end %>
-    <form action="/bookmark/new" method="get">
+    <form action="/bookmarks/new" method="get">
       <input type="submit" value="Add New Bookmark"></input>
+    </form>
+    <form action="/bookmarks/delete" method="get">
+      <input type="submit" value="Delete a Bookmark"></input>
     </form>
   </body>
 </html>

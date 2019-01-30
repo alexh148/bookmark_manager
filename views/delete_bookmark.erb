@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookmark Manager - Delete Bookmark</title>
+  </head>
+  <body>
+    <h1>Please click bookmark you would like to delete</h1>
+
+    <form action="/bookmarks" method="delete">
+      <% @bookmarks.each do |bookmark| %>
+      <input type='radio' name='record' id=<%=bookmark.title%> value=<%=bookmark.title%>><%=bookmark.title%><br>
+      <%end%>
+      <input type="submit" value="Delete">
+    </form>

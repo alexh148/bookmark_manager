@@ -4,6 +4,7 @@ require 'rspec'
 require 'simplecov'
 require 'simplecov-console'
 require 'helper'
+require_relative './features/web_helpers.rb'
 require_relative '../app.rb'
 
 ENV['RACK_ENV'] = 'test'
@@ -22,7 +23,7 @@ RSpec.configure do |config|
   config.before(:each) do
     truncate_test_db
   end
-  
+
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end

@@ -8,6 +8,14 @@ Habakkuk's Domain Model for User Story 1:
 
 ![](bookmark_manager_1.png)
 
+```
+user story for deleting bookmarks
+As a user
+So that I don't have to see bookmarks I'm no longer interested in
+I want to be able to delete bookmarks
+```
+
+
 Database Setup Instructions:
 ----
 
