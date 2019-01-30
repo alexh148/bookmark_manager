@@ -37,4 +37,12 @@ describe Bookmark do
       expect(subject.title).to eq 'Google'
     end
   end
+
+  describe '#delete' do
+    it 'deletes record from the database' do
+      object = Bookmark.create('http://www.askjeeves.com', 'Ask Jeeves')
+      Bookmark.delete(id: object.id)
+      expect(Bookmark.all.last.id).not_to eq(object.id)
+    end
+  end
 end
