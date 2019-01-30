@@ -5,7 +5,9 @@
   </head>
   <body>
     <h1>Bookmark List</h1>
-    <p><%= @bookmarks %></p>
+    <% @bookmarks.each do |bookmark| %>
+    <p><a href='<%=bookmark[:url]%>'><%=bookmark[:title]%></a></p>
+    <% end %>
     <form action="/bookmark/new" method="get">
       <input type="submit" value="Add New Bookmark"></input>
     </form>

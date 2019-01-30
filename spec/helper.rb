@@ -5,5 +5,5 @@ end
 
 def add_default_records
   connection = PG.connect(dbname: 'bookmark_manager_test')
-  connection.exec("INSERT INTO bookmarks(url) VALUES('http://www.google.com'), ('http://www.twitter.com')")
+  connection.exec("INSERT INTO bookmarks(url,title) VALUES('http://www.google.com','Google'), ('http://www.twitter.com','Twitter')")
 end

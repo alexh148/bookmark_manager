@@ -5,6 +5,7 @@ source "https://rubygems.org"
 gem 'sinatra'
 gem 'shotgun'
 gem 'pg'
+gem 'launchy'
 
 group :test do
   gem 'capybara'

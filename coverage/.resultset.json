@@ -10,30 +10,20 @@
         null,
         1,
         2,
-        2,
         null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
         1,
         1,
         1,
         null,
         null,
-        null
-      ],
-      "/Users/alexhutchings/Projects/bookmark_manager/spec/helper.rb": [
         1,
-        2,
-        2,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
-        1,
-        2,
-        2,
         null
       ],
       "/Users/alexhutchings/Projects/bookmark_manager/spec/features/bookmarks_page_spec.rb": [
@@ -42,16 +32,21 @@
         1,
         1,
         1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -71,6 +66,6 @@
         null
       ]
     },
-    "timestamp": 1548857324
+    "timestamp": 1548860011
   }
 }

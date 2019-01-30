@@ -5,18 +5,19 @@ require 'helper'
 describe Bookmark do
 
   before(:each) do
-    truncate_test_db
     add_default_records
   end
-
-  it 'returns a list of bookmarks' do
-    expect(Bookmark.all).to include('http://www.google.com')
+  describe 'Bookmark.all' do
+    it 'returns a list of bookmarks' do
+      expect(Bookmark.all).to include( {title: 'Google', url: 'http://www.google.com' } )
+    end
   end
-
-  it 'creates a new bookmark' do
-    url = 'www.website.com'
-    Bookmark.create(url)
-    expect(Bookmark.all).to include('www.website.com')
+  describe 'Bookmark.create' do
+    it 'creates a new bookmark' do
+      url = 'www.website.com'
+      title = 'Website'
+      Bookmark.create(url, title)
+      expect(Bookmark.all).to include({title: 'Website', url: 'www.website.com'})
+    end
   end
-
 end
