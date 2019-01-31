@@ -10,7 +10,7 @@ describe Bookmark do
   describe 'Bookmark.all' do
     it 'returns a list of bookmarks' do
       expect(Bookmark.all[0]).to be_an_instance_of(Bookmark)
-      expect(Bookmark.all[0].url).to eq 'http://www.google.com'
+      expect(Bookmark.all[0].url).to eq 'http://www.testwebsite.com'
     end
   end
   describe 'Bookmark.create' do

@@ -5,8 +5,8 @@ feature 'Deleting bookmarks' do
   scenario 'User deletes specific bookmark' do
     view_bookmarks_page
     click_button 'Delete a Bookmark'
-    choose 'Google'
+    choose 'Test-Website'
     click_button 'Delete'
-    expect(page).not_to have_link('Google')
+    expect(page).not_to have_link('Test-Website')
   end
 end

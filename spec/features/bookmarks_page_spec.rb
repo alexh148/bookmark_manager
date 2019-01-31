@@ -2,7 +2,7 @@ feature 'shows list of bookmarks' do
   scenario 'user visits bookmarks list view' do
     add_default_records
     view_bookmarks_page
-    expect(page).to have_link('Google')
+    expect(page).to have_link('Test-Website')
   end
 end
 

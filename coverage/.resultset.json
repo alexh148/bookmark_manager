@@ -59,6 +59,40 @@
         null,
         null
       ],
+      "/Users/alexhutchings/Projects/bookmark_manager/spec/database_connection_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/alexhutchings/Projects/bookmark_manager/spec/database_spec.rb": [
+
+      ],
       "/Users/alexhutchings/Projects/bookmark_manager/spec/features/bookmarks_page_spec.rb": [
         1,
         1,
@@ -127,6 +161,6 @@
         null
       ]
     },
-    "timestamp": 1548945530
+    "timestamp": 1548949547
   }
 }
