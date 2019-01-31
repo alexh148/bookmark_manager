@@ -9,7 +9,7 @@
         1,
         null,
         1,
-        6,
+        7,
         null,
         1,
         1,
@@ -37,6 +37,14 @@
         1,
         1,
         null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
         1,
         1,
         null,
@@ -101,8 +109,24 @@
         1,
         null,
         null
+      ],
+      "/Users/alexhutchings/Projects/bookmark_manager/spec/features/updating_bookmarks_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1548868695
+    "timestamp": 1548945530
   }
 }

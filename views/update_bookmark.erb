@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <form action="/bookmarks" method="post">
+      <input type="hidden" name="_method" value="PATCH">
+      <input type="hidden" name="id" value="<%= @bookmark.id %>">
+      <input type="text" name="Title" placeholder="Enter Bookmark title here" value=<%= @bookmark.title %> required>
+      <input type="text" name="URL" placeholder="Enter URL here" value=<%= @bookmark.url %> required>
+      <input type="submit" value="Save">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookmark Manager - Update Bookmark List</title>
+  </head>
+  <body>
+    <h1>Please select bookmark you would like to update</h1>
+
+    <form action="/bookmarks/update_bookmark" method="post">
+      <% @bookmarks.each do |bookmark| %>
+        <input type='radio' name='record' id=<%=bookmark.title%> value=<%=bookmark.id%>><%=bookmark.title%><br>
+      <% end %>
+      <input type="submit" value="Update">
+    </form>
+  </body>
+</html>

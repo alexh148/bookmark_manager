@@ -6,10 +6,11 @@
   <body>
     <h1>Please click bookmark you would like to delete</h1>
 
-    <form action="/bookmarks/delete" method="post">
+    <form action="/bookmarks" method="post">
+      <input type="hidden" name="_method" value="DELETE">
       <% @bookmarks.each do |bookmark| %>
         <input type='radio' name='record' id=<%=bookmark.title%> value=<%=bookmark.id%>><%=bookmark.title%><br>
-      <%end%>
+      <% end %>
       <input type="submit" value="Delete">
     </form>
   </body>

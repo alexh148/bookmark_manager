@@ -45,4 +45,12 @@ describe Bookmark do
       expect(Bookmark.all.last.id).not_to eq(object.id)
     end
   end
+
+  describe '#update' do
+    it 'updates record in the database' do
+      object = Bookmark.create('http://www.askjeeves.com', 'Ask Jeeves')
+      Bookmark.update(id: object.id, title: 'Disney', url: 'http://www.disney.com')
+      expect(Bookmark.all.last.url).to eq 'http://www.disney.com'
+    end
+  end
 end

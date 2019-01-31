@@ -3,6 +3,8 @@ require_relative './lib/bookmark'
 
 class BookmarkApp < Sinatra::Base
 
+  enable :method_override
+
   get '/' do
     erb :index
   end
@@ -26,8 +28,23 @@ class BookmarkApp < Sinatra::Base
     erb :delete_bookmark
   end
 
-  post '/bookmarks/delete' do
+  delete '/bookmarks' do
     Bookmark.delete(id: params[:record])
+    redirect '/bookmarks'
+  end
+
+  get '/bookmarks/update_list' do
+    @bookmarks = Bookmark.all
+    erb :update_list
+  end
+
+  post '/bookmarks/update_bookmark' do
+    @bookmark = Bookmark.all.find { |bookmark| bookmark.id == params[:record] }
+    erb :update_bookmark
+  end
+
+  patch '/bookmarks' do
+    Bookmark.update(id: params[:id], title: params[:Title], url: params[:URL])
     redirect '/bookmarks'
   end
 end
