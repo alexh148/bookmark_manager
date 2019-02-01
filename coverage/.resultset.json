@@ -113,6 +113,16 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/alexhutchings/Projects/bookmark_manager/spec/features/deleting_bookmarks_spec.rb": [
@@ -161,6 +171,6 @@
         null
       ]
     },
-    "timestamp": 1548949547
+    "timestamp": 1548953277
   }
 }

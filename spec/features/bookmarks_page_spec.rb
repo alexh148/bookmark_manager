@@ -17,4 +17,14 @@ feature 'add bookmarks' do
     click_button('Save')
     expect(page).to have_link('Facebook')
   end
+
+  scenario 'when user tries to add an invalid bookmark' do
+    view_bookmarks_page
+    click_button('Add New Bookmark')
+    fill_in 'URL', with: 'Some invalid URL'
+    fill_in 'Title', with: 'Some invalid title'
+    click_button('Save')
+    expect(page).to have_content('Invalid URL entered. Please try again')
+
+  end
 end

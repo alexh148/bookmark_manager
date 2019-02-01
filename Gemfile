@@ -6,6 +6,7 @@ gem 'sinatra'
 gem 'shotgun'
 gem 'pg'
 gem 'launchy'
+gem 'sinatra-flash'
 
 group :test do
   gem 'capybara'

@@ -4,6 +4,12 @@
     <title></title>
   </head>
   <body>
+    <% flash.keys.each do |type| %>
+      <div data-alert class="flash <%= type %> alert-box radius">
+        <%= flash[type] %>
+        <a href="/bookmarks/new" class="close">&times;</a>
+      </div>
+    <% end %>
     <form action="/bookmarks" method="post">
       <input type="text" name="Title" placeholder="Enter Bookmark title here" required>
       <input type="text" name="URL" placeholder="Enter URL here" required>
